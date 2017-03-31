@@ -1,20 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
 
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:gravity="center"
-    android:orientation="vertical">
+    android:layout_height="match_parent">
 
     <TextView
         android:id="@+id/question_text_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
         android:padding="24dp"/>
     <LinearLayout
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:orientation="horizontal">
 
         <Button
             android:id="@+id/True_button"
@@ -32,12 +33,14 @@
 <LinearLayout
     android:layout_width="wrap_content"
     android:layout_height="wrap_content">
+
+    android:orientation="horizontal">
     <Button
         android:id="@+id/preview_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:drawablePadding="4dp"
-
+        android:layout_gravity="bottom|right"
         android:drawableRight="@drawable/rout"
 
 
@@ -48,7 +51,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:drawablePadding="4dp"
-
+        android:layout_gravity="bottom|right"
         android:drawableRight="@drawable/rout"
 
 
@@ -56,4 +59,4 @@
 
 </LinearLayout>
 
-</LinearLayout>
+</FrameLayout>
